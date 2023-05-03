@@ -8,7 +8,7 @@ function ResetPassword() {
 	const [email, setEmail] = useState("");
 
 	useEffect(() => {
-		document.title = `Reset Password | FitIn`;
+		document.title = `Reset Password | MoFit`;
 	}, []);
 
 	async function handleSubmit(e) {

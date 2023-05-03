@@ -26,7 +26,7 @@ function SocialPage() {
     const [isLoading, setIsLoading] = useState(true);
 
     useEffect(() => {
-        document.title = `Social Page | FitIn`;
+        document.title = `Social Page | MoFit`;
     }, []);
 
     useEffect(() => {

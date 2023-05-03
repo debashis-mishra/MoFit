@@ -50,9 +50,14 @@
     color: white;
 }
 
+.pageSwitcherItem-active:hover{
+    background-color: #FF1493;
+}
+
 .pageSwitcherItem-active {
-    background-color: #0b5ed7;
+    /* background-color: #0b5ed7; */
     color: white;
+    /* #0b5ed7 */
 }
 
 .pageSwitcherItem:first-child {

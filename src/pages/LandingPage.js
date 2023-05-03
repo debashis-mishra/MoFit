@@ -11,7 +11,7 @@ function LandingPage({ authComponent }) {
 		<Container fluid className="landingPage">
 			<Row md={6}>
 				<Col md={6} className="landingImageContainer">
-					<Image className="landingImage" alt="FitIn cover" src={"./landing-page.png"} />
+					<Image className="landingImage" alt="MoFit cover" src={"./landing-page.png"} />
 				</Col>
 				<Col md={6} className="appForm">
 					<div className="pageSwitcher">
@@ -23,7 +23,7 @@ function LandingPage({ authComponent }) {
 						</NavLink>
 					</div>
 					<h1 className="landingHeader">
-						Welcome to <span style={{ color: "#3483EB" }}>FitIn</span>
+						Welcome to <span style={{ color: "#FF1493" }}>MoFit</span>
 					</h1>
 					{authComponent}
 				</Col>

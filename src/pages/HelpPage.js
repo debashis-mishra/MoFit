@@ -11,7 +11,7 @@ function HelpPage() {
   // Set the page title
   useEffect(() => {
     setIsLoading(true);
-    document.title = `Help | FitIn`;
+    document.title = `Help | MoFit`;
     setIsLoading(false);
   }, []);
 
@@ -65,10 +65,10 @@ function HelpPage() {
                     where do I look?
                   </Accordion.Header>
                   <Accordion.Body>
-                    FitIn has provided a very helpful tool with the explore
+                    MoFit has provided a very helpful tool with the explore
                     workouts section located at the bottom of the Workouts page.
                     This section has a comprehensive list of all the workouts
-                    you can keep track of using FitIn's workout tracking
+                    you can keep track of using MoFit's workout tracking
                     technology. To see more info on any of the workouts listed
                     in the carousel, you can click on the card which will show
                     pop-up a modal which will detail all the information
@@ -82,7 +82,7 @@ function HelpPage() {
                     How do I make a custom workout?
                   </Accordion.Header>
                   <Accordion.Body>
-                    FitIn has its custom technology in place to help its users
+                    MoFit has its custom technology in place to help its users
                     make their own custom workout routines. To build your own
                     custom routine, locate the my routines container. There
                     should be a button labeled "Create Routine" which opens a
@@ -154,7 +154,8 @@ function HelpPage() {
               as={Link}
               to="#"
               onClick={(e) => {
-                window.location.href = "mailto:fitin@fitin.web.app";
+                window.location.href = "mailto:mofit@mofit.web.app";
+                // window.location.href = "mailto:fitin@fitin.web.app";
                 e.preventDefault();
               }}
               variant="primary"

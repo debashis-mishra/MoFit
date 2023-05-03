@@ -12,6 +12,7 @@ import HelpPage from "./pages/HelpPage";
 import SinglePostPage from "./pages/SinglePostPage";
 import SettingsPage from "./pages/SettingsPage";
 import AppCardPage from "./pages/AppCardPage";
+import "./firebase.js"
 
 function App() {
     const { currentUser } = useAuth();

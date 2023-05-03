@@ -52,7 +52,7 @@ function WorkoutPage() {
 
   // Set the page title
   useEffect(() => {
-    document.title = `Workout Page | FitIn`;
+    document.title = `Workout Page | MoFit`;
   }, []);
 
   // Get all user defined routines

@@ -129,7 +129,7 @@ function CreatePost() {
 						Create Post
 					</label>
 					{file && <Image className="rounded postImage my-2" src={URL.createObjectURL(file)} alt={fileName} />}
-					{progress > 0 && <Line percent={progress} strokeWidth={2} trailWidth={2} trailColor="#141414" strokeColor="#0088ff" />}
+					{progress > 0 && <Line percent={progress} strokeWidth={2} trailWidth={2} trailColor="#141414" strokeColor="#FF1493" />}
 					<textarea className="form-control" rows="6" placeholder="Write about your workout..." id="postTextArea" value={postText} onChange={(e) => setPostText(e.target.value)}></textarea>
 				</div>
 				<div className="inputArea">

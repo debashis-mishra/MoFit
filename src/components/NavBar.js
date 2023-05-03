@@ -28,7 +28,7 @@ function NavBar() {
         >
           <Image alt="logo" className="logo" src={"/fitin_logo.png"} />{" "}
           <h2 className="my-auto" id="logoText" style={{ fontWeight: "bold" }}>
-            Fit<span style={{ color: "#0d6efd" }}>In</span>
+            Mo<span style={{ color: "#FF1493" }}>Fit</span>
           </h2>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
@@ -38,7 +38,7 @@ function NavBar() {
               <Link
                 className="nav-link"
                 to="/workout"
-                style={{ textDecoration: "underline #0d6efd" }}
+                style={{ textDecoration: "underline #FF1493" }}
               >
                 Workout
               </Link>
@@ -52,7 +52,7 @@ function NavBar() {
               <Link
                 className="nav-link"
                 to="/social"
-                style={{ textDecoration: "underline #0d6efd" }}
+                style={{ textDecoration: "underline #FF1493" }}
               >
                 Social
               </Link>

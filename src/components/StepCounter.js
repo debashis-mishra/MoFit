@@ -80,7 +80,7 @@ function StepCounter({ date, dayData }) {
               )
             }
           ></Form.Control>
-          <Button variant="primary" onClick={() => handleAddSteps()}>
+          <Button class="primary"  onClick={() => handleAddSteps()}>
             Update
           </Button>
         </InputGroup>

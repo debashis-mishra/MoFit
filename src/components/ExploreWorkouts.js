@@ -40,7 +40,7 @@ function ExploreWorkouts({ workouts }) {
 				<div className="categoriesContainer">
 					<Row className="m-0" style={{ flexWrap: "unset" }}>
 						<Col className="p-2" onClick={() => setSelectedCategory(null)}>
-							<Button>
+							<Button className="colorMe">
 								<h5 style={{ margin: "0px" }} className="text-nowrap mx-3">
 									All
 								</h5>

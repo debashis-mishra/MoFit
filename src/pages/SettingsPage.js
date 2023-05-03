@@ -40,7 +40,7 @@ function SettingsPage({ authComponent }) {
     useAuth();
 
   useEffect(() => {
-    document.title = `Settings Page | FitIn`;
+    document.title = `Settings Page | MoFit`;
   }, []);
 
   const handleFileChange = async (e) => {

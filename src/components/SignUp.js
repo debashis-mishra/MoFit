@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import GoogleButton from "react-google-button";
 import { useAuth } from "../contexts/AuthContext";
 import { Link } from "react-router-dom";
+import { createUserWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
 
 function SignUp() {
 	const { signUp, signInGoogle } = useAuth();
@@ -10,12 +12,14 @@ function SignUp() {
 	const [password, setPassword] = useState("");
 
 	useEffect(() => {
-		document.title = `Sign Up | FitIn`;
+		document.title = `Sign Up | MoFit`;
 	}, []);
 
 	async function handleSubmit(e) {
 		e.preventDefault();
-		await signUp(email, password, name).catch((err) => console.log(JSON.stringify(err)));
+		createUserWithEmailAndPassword(auth, email, password).then(() => { alert('Success') });
+		return;
+		// await signUp(email, password, name).catch((err) => console.log(JSON.stringify(err)));
 	}
 
 	async function handleGoogle(e) {

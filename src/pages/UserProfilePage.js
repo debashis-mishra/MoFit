@@ -25,7 +25,7 @@ function UserProfilePage() {
 	const [changeFollowersShow, setChangeFollowersShow] = useState(false);
 
 	useEffect(() => {
-		document.title = `${user ? user.name : "User Not Found"} | FitIn`;
+		document.title = `${user ? user.name : "User Not Found"} | MoFit`;
 	}, [user]);
 
 	useEffect(() => {

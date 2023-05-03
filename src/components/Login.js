@@ -2,24 +2,31 @@ import React, { useState, useEffect } from "react";
 import GoogleButton from "react-google-button";
 import { useAuth } from "../contexts/AuthContext";
 import { Link } from "react-router-dom";
+import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
+import { auth } from "../firebase";
 
 function Login() {
 	const { login, signInGoogle } = useAuth();
+	// const auth = getAuth(app);
 	const [email, setEmail] = useState("");
 	const [password, setPassword] = useState("");
 
 	useEffect(() => {
-		document.title = `Sign In | FitIn`;
+		document.title = `Sign In | MoFit`;
 	}, []);
 
 	async function handleSubmit(e) {
 		e.preventDefault();
-		await login(email, password).catch((err) => alert(JSON.stringify(err)));
+		signInWithEmailAndPassword(auth, email, password).then(() => { alert('Success') }).catch((err) => { console.log('Error',err) });
+		// await login(email, password).catch((err) => alert(JSON.stringify(err)));
+
 	}
 
 	async function handleGoogle(e) {
 		e.preventDefault();
+		// auth.signInGoogle
 		await signInGoogle().catch((err) => alert(JSON.stringify(err)));
+
 	}
 	return (
 		<div className="formCenter">

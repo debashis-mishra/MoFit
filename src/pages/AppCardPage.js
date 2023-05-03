@@ -19,7 +19,7 @@ function AppCardPage() {
 
     // Set the page title
     useEffect(() => {
-        document.title = `Welcome! | FitIn`;
+        document.title = `Welcome! | MoFit`;
     }, []);
 
     return (
@@ -32,7 +32,7 @@ function AppCardPage() {
                         src={"/fitin_logo.png"}
                     />{" "}
                     <h1 className="my-auto" style={{ fontWeight: "bold" }}>
-                        Fit<span style={{ color: "#0d6efd" }}>In</span>
+                        Mo<span style={{ color: "#FF1493" }}>Fit</span>
                     </h1>
                 </div>
 

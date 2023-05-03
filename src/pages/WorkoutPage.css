@@ -35,7 +35,7 @@ body {
 }
 .currentRoutineHead {
     text-align: center;
-    background-color: #347aeb !important;
+    background-color: #FF1493 !important;
     font-size: 31px;
 }
 .currentStepHead {
@@ -54,7 +54,7 @@ body {
 /* Styling for calendar */
 .rdp {
     --rdp-background-color: #535d6d !important;
-    --rdp-accent-color: #347aeb !important;
+    --rdp-accent-color: #FF1493 !important;
     --rdp-outline-selected: 2px solid rgba(0, 0, 0, 0.75);
 }
 .rdp-head_cell { 
